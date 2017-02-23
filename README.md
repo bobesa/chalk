@@ -23,6 +23,18 @@ chalk.Red().Italic().Printf("red italic %d", 42)
 chalk.GreenBackground().Bold().Print("green", "bold", "text")
 ```
 
+## As Variable
+You can also "cook" **Formatters** to variable and reuse.
+```go
+cyan := chalk.Cyan().Bold()
+boldi := chalk.Bold().Italic()
+
+for index, msg := range messages {
+    boldi.Println(index)
+    cyan.Println(msg)
+}
+```
+
 ## Set & Clear
 You can call `Set` function on **Formatter** to set formatter's color format active until `Clear` or other formatting function is called.
 ```go
