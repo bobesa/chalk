@@ -53,6 +53,23 @@ log.Println("Non formatted message")
 You can temporarily disable/enable coloring with `Disable()` or `Enable()` functions.
 This only overrides behaviour and you can still use formatting functions as is, but they won't do any formating.
 
+```go
+// Print bold text
+chalk.Bold().Println("bold text")
+
+// Disable formatting
+chalk.Disable()
+
+// Print non-bold text (because of disabled formatting)
+chalk.Bold().Println("not-bold text")
+
+// Enable formatting again
+chalk.Enable()
+
+// Print bold text
+chalk.Bold().Println("bold text")
+```
+
 # Shorthand calls
 You can call the **Formatter** functions with `As` prefix (`AsBlack`, `AsRed`, `AsBold`, `AsItalic`...) to directly report color formatted string.
 This shorthand syntax supports multiple arguments (just as most of `fmt.Print*` functions).
