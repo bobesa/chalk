@@ -22,6 +22,16 @@ func (f Formatter) colorFormatString() string {
 	return fmt.Sprintf("%s[%sm", spEscape, strings.Join(format, ";"))
 }
 
+// Set sets formatting until other formatting function or Clear is called
+func (f Formatter) Set() {
+	fmt.Printf(f.colorFormatString())
+}
+
+// Clear clears formatting set by Set function
+func Clear() {
+	fmt.Print(spClear)
+}
+
 // Print is colored equivalent of fmt.Print
 func (f Formatter) Print(a ...interface{}) {
 	fmt.Print(f.colorFormatString() + fmt.Sprint(a...) + spClear)
