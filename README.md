@@ -66,3 +66,25 @@ chalk.AsGreenBackground("green", "text")
 - MagentaBackground 💜 
 - CyanBackground 🚙 
 - WhiteBackground ⚪️ 
+
+---
+
+- BlackIntense ⚫️ 
+- RedIntense 🔴 
+- GreenIntense 🍏 
+- YellowIntense 💛 
+- BlueIntense 🔵 
+- MagentaIntense 💜 
+- CyanIntense 🚙 
+- WhiteIntense ⚪️ 
+
+---
+
+- BlackIntenseBackground ⚫️ 
+- RedIntenseBackground 🔴 
+- GreenIntenseBackground 🍏 
+- YellowIntenseBackground 💛 
+- BlueIntenseBackground 🔵 
+- MagentaIntenseBackground 💜 
+- CyanIntenseBackground 🚙 
+- WhiteIntenseBackground ⚪️ 
