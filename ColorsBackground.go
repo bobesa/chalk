@@ -1,5 +1,6 @@
 package chalk
 
+// Background text colors
 const (
 	bgBlack attribute = iota + 40
 	bgRed
