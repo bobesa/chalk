@@ -35,6 +35,22 @@ for index, msg := range messages {
 }
 ```
 
+## Caching
+If you are using just certain formatting all the time, it is better to use **Cached Formatter** instead. 
+**Cached Formatter** has reduced overhead, but you will lose the ability to change it any further.
+Following methods are available on this formatter: `Print`, `Sprint`, `Println`, `Sprintln`, `Printf`, `Sprintf` & `Set`.
+```go
+var (
+    cyan = chalk.Cyan.Cached() // No longer editable, but faster
+)
+
+func PrintVeryLongListOfMessages() {
+    for _, msg := range veryLongListOfMessages {
+        cyan.Println(msg) // Same calls as on regular Formatter
+    }
+}
+```
+
 ## Set & Clear
 You can call `Set` function on **Formatter** to set formatter's color format active until `Clear` or other formatting function is called.
 ```go

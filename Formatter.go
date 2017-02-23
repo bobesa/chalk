@@ -32,6 +32,13 @@ func Clear() {
 	fmt.Print(spClear)
 }
 
+// Cache caches formatter for faster performance
+// This will reduce the overhead, but you cannot edit it further
+// Important: Make sure you formatting is not disabled
+func (f Formatter) Cache() CachedFormatter {
+	return CachedFormatter(f.colorFormatString())
+}
+
 // Print is colored equivalent of fmt.Print
 func (f Formatter) Print(a ...interface{}) {
 	fmt.Print(f.colorFormatString() + fmt.Sprint(a...) + spClear)
