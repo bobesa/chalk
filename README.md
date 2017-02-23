@@ -36,6 +36,11 @@ chalk.AsRed("red", 42)
 - Faint
 - _Italic_
 - Underline
+- BlinkSlow
+- BlinkRapid
+- ReverseVideo
+- Concealed
+- CrossedOut
 
 - Black ⚫️ 
 - Red 🔴 
