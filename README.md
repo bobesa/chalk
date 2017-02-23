@@ -41,7 +41,9 @@ chalk.AsRed("red", 42)
 - ReverseVideo
 - Concealed
 - CrossedOut
+
 ---
+
 - Black ⚫️ 
 - Red 🔴 
 - Green 🍏 
@@ -50,7 +52,9 @@ chalk.AsRed("red", 42)
 - Magenta 💜 
 - Cyan 🚙 
 - White ⚪️ 
+
 ---
+
 - BlackBackground ⚫️ 
 - RedBackground 🔴 
 - GreenBackground 🍏 
