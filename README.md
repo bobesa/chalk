@@ -13,6 +13,7 @@ This will return a Formatter that has `Print`, `Sprint`, `Println`, `Sprintln`, 
 ```go
 chalk.Bold().Println("bold text")
 chalk.Red().Printf("red %d", 42)
+chalk.GreenBackground().Print("green", "text")
 ```
 
 ## Format Chaining
@@ -20,6 +21,7 @@ chalk.Red().Printf("red %d", 42)
 ```go
 chalk.Bold().Cyan().Println("bold cyan text")
 chalk.Red().Italic().Printf("red italic %d", 42)
+chalk.GreenBackground().Bold().Print("green", "bold", "text")
 ```
 
 # Shorthand calls
@@ -28,6 +30,7 @@ This shorthand syntax supports multiple arguments (just as most of `fmt.Print*` 
 ```go
 chalk.AsBold("bold text")
 chalk.AsRed("red", 42)
+chalk.AsGreenBackground("green", "text")
 ```
 
 # List of Colors & Formats
