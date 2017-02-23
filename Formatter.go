@@ -11,6 +11,10 @@ type Formatter []attribute
 
 // colorFormatString reports basic formatting for string
 func (f Formatter) colorFormatString() string {
+	if !coloringEnabled {
+		return ""
+	}
+
 	format := make([]string, len(f))
 	for i, v := range f {
 		format[i] = strconv.Itoa(int(v))

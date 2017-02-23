@@ -24,6 +24,10 @@ chalk.Red().Italic().Printf("red italic %d", 42)
 chalk.GreenBackground().Bold().Print("green", "bold", "text")
 ```
 
+# Disable/Enable coloring
+You can temporarily disable/enable coloring with `Disable()` or `Enable()` functions.
+This only overrides behaviour and you can still use formatting functions as is, but they won't do any formating.
+
 # Shorthand calls
 You can call the formatter functions with `As` prefix (`AsBlack`, `AsRed`, `AsBold`, `AsItalic`...) to directly report color formatted string.
 This shorthand syntax supports multiple arguments (just as most of `fmt.Print*` functions).
