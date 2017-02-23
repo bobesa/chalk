@@ -98,6 +98,10 @@ chalk.Enable()
 chalk.Bold().Println("bold text")
 ```
 
+# JSON Color formatting (Experimental)
+If you are brave enough you can play with `JSON(v interface{})` and `JSON(v interface{}, prefix, indent string)` function (similar signature to `json.Marshal` & `json.MarshalIndent`) that parses given value and reports new color formatted json.
+_Output should be similar to that of `json.Marshal*`, but as stated before; This functionality is experimental and should mostly be used for debugging purposes._
+
 # Shorthand calls
 You can call the **Formatter** functions with `As` prefix (`AsBlack`, `AsRed`, `AsBold`, `AsItalic`...) to directly report color formatted string.
 This shorthand syntax supports multiple arguments (just as most of `fmt.Print*` functions).
