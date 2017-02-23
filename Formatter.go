@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// Formatter is
+// Formatter is color formatter
 type Formatter []attribute
 
 // colorFormatString reports basic formatting for string
